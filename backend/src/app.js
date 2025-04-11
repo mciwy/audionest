@@ -19,12 +19,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use('/api/auth', authRoutes);
-
 app.use('/api/tracks', trackRoutes);
-app.use('/uploads', express.static('uploads'));
-
 app.use('/api/playlists', playlistRoutes);
-
-console.log('JWT_SECRET is:', process.env.JWT_SECRET);
+app.use('/uploads', express.static('uploads'));
 
 export default app;

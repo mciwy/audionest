@@ -77,7 +77,7 @@ export const logout = (req, res) => {
 
 export const getCurrentUser = async (req, res) => {
   try {
-    console.log('[getCurrentUser] Decoded user from token:', req.user); // 🔍 лог JWT-пользователя
+    console.log('[getCurrentUser] Decoded user from token:', req.user);
 
     const user = await prisma.user.findUnique({
       where: { id: req.user.userId },

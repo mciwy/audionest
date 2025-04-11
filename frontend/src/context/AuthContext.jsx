@@ -10,14 +10,14 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     getMe()
       .then((res) => {
-        // console.log('[AuthContext] getMe response:', res.data);
+        console.log('[AuthContext] getMe response:', res.data);
         setUser(res.data);
       })
       .catch((err) => {
         if (err.response?.status === 401) {
-         // console.log('[AuthContext] Not authorized');
+          console.log('[AuthContext] Not authorized');
         } else {
-         // console.error('[AuthContext] getMe error:', err);
+          console.error('[AuthContext] getMe error:', err);
         }
       })
       .finally(() => setLoading(false));

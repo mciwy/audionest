@@ -31,7 +31,6 @@ export default function Login() {
         <h2>Sign in!</h2>
 
         <div className="input-group">
-          <i className="fas fa-envelope"></i>
           <input
             type="email"
             value={email}
@@ -43,7 +42,6 @@ export default function Login() {
         </div>
 
         <div className="input-group">
-          <i className="fas fa-lock"></i>
           <input
             type="password"
             value={password}
@@ -59,7 +57,7 @@ export default function Login() {
         <button type="submit">Login</button>
 
         <p className="link">
-          Don't have an account? <Link to="/register">Register</Link>
+        If you don't have an account <Link to="/register">Register</Link>
         </p>
       </form>
     </div>

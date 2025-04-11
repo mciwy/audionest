@@ -35,7 +35,6 @@ export default function Register() {
         <h2>Register!</h2>
 
         <div className="input-group">
-          <i className="fas fa-envelope"></i>
           <input
             type="email"
             value={email}
@@ -47,7 +46,6 @@ export default function Register() {
         </div>
 
         <div className="input-group">
-          <i className="fas fa-lock"></i>
           <input
             type="password"
             value={password}
@@ -63,7 +61,7 @@ export default function Register() {
         <button type="submit">Register</button>
 
         <p className="link">
-          Already have an account? <Link to="/">Login</Link>
+          <Link to="/">I already have an account</Link>
         </p>
       </form>
     </div>
